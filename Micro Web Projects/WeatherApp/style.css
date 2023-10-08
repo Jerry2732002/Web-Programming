@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(51, 185, 171);
+}
+.outer_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 500px;
+    padding-top: 20px;
+    background:linear-gradient(135deg,rgb(177, 255, 254),rgb(25, 163, 217));
+    border-radius: 20px;
+    text-align: center;
+}
+.search{
+    display: flex;
+    justify-content: center;
+}
+.search_bar{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    min-width: 240px;
+    max-width: 280px;
+    min-height: 30px;
+}
+.search_button{
+    position: relative;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    margin-left: 4px;
+    width: 36px;
+    height: 36px;
+    vertical-align: top;
+    cursor: pointer;
+}
+.search_image {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%; 
+    height: auto;
+    vertical-align: top;
+}
+.search_bar:hover,.search_button:hover{
+    box-shadow: 0 0 4px rgb(84, 84, 84);
+}
+.search_button:active{
+    border: 1px solid black;
+}
+.weather_img{
+    display: flex;
+    justify-content: center;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+.col {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.weather {
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.weather .temp {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.weather .city,
+.weather .humidity,
+.weather .wind {
+    font-size: 24px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.close-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
