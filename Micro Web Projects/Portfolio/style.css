@@ -1,0 +1,73 @@
+/* Add styling for your portfolio here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.section {
+    padding: 20px;
+}
+
+#skill-tree {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.tree {
+    list-style: none;
+    padding: 0;
+}
+
+.level {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.skill-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    max-width: 500px;
+    min-width: none;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill {
+    font-weight: bold;
+}
+
+.skill p {
+    margin: 0;
+}
+
+

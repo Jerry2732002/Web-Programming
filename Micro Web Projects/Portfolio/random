@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerry Sebastian - Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home Page</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#gallery">My Gallery</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <h1>Jerry Sebastian</h1>
+        <p>Computer Engineering Student</p>
+
+        <div id="skill-tree">
+            <h2>Skill Tree</h2>
+            <ul class="tree">
+                <li class="level">
+                    <div class="skill-card">
+                        <span class="skill">Java</span>
+                        <p>Java is a widely-used programming language for coding web applications</p>
+                    </div>
+                </li>
+                <li class="level">
+                    <div class="skill-card">
+                        <span class="skill">Python</span>
+                        <p>Python is ahigh-level, general-purpose, and interpreted programming language used in various sectors
+                           including machine learning, artificial intelligence, data analysis, web development, and many more.</p>
+                    </div>
+                </li>
+                <li class="level">
+                    <div class="skill-card">
+                        <span class="skill">C/C++</span>
+                        <p>C++ is a popular programming language. C++ is used to create computer programs,
+                             and is one of the most used language in game development.</p>
+                    </div>
+                </li>
+                <li class="level">
+                    <div class="skill-card">
+                        <span class="skill">Web Development</span>
+                        <p>Skills in HTML, CSS, and JavaScript for web development.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <!-- Add information about yourself here -->
+    </section>
+
+    <section id="gallery" class="section">
+        <h2>My Gallery</h2>
+        <!-- Add your portfolio projects and images here -->
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <!-- Add your contact information and a contact form if desired -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
