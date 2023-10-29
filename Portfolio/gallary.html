@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: linear-gradient(to bottom right, #87CEEB, #ffffff);
+        }
+        #image-gallery {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        img {
+            max-width: 100%;D:
+            max-height: 100%;
+            animation: slide 15s linear infinite;
+        }
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            20% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-100%);
+            }
+            45% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(-200%);
+            }
+            70% {
+                transform: translateX(-200%);
+            }
+            75% {
+                transform: translateX(-300%);
+            }
+            95% {
+                transform: translateX(-300%);
+            }
+            100% {
+                transform: translateX(-400%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="image-gallery">
+        <img src="./assets/img/work1.jpg" alt="Image 1">
+        <img src="./assets/img/work2.jpg" alt="Image 1">
+        <img src="./assets/img/work3.jpg" alt="Image 1">
+        <img src="./assets/img/work4.jpg" alt="Image 1">
+        <img src="./assets/img/work5.jpg" alt="Image 1">
+    </div>
+    <script>
+        const images = document.querySelectorAll('#image-gallery img');
+        let currentIndex = 0;
+
+        function changeImage() {
+            images[currentIndex].style.opacity = 0;
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].style.opacity = 1;
+        }
+
+        setInterval(changeImage, 3000);
+    </script>
+</body>
+</html>
